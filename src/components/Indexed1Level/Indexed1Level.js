@@ -23,7 +23,7 @@ function Indexed1Level(props) {
     const pointerSize = values.pointerSize * values.pointerSizeUnit;
     const postion = parseInt(values.position * values.positionUnit);
 
-    const blockIndex = parseInt(postion / blockSize);
+    const blockIndex = Math.round(postion / blockSize);
     const blockOffset = postion % blockSize;
 
     setValues({
