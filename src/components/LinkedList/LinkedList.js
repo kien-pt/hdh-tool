@@ -35,7 +35,7 @@ function LinkedList() {
     const dataSize = blockSize - pointerSize;
 
     const blockIndex = parseInt(postion / dataSize);
-    const offset = postion % dataSize;
+    const offset = postion % dataSize + pointerSize;
 
     setValues({
       ...values,
