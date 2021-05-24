@@ -6,7 +6,7 @@ import {
 
 import KPTextfield from '../KPTextfield';
 
-function Indexed1Level(props) {
+function Indexed1Level() {
   const [values, setValues] = React.useState({
     blockSize: 4, blockSizeUnit: 1024,
     pointerSize: 4, pointerSizeUnit: 1,
